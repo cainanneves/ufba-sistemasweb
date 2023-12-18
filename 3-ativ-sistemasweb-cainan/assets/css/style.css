@@ -1,0 +1,340 @@
+/* GENERAL STYLING */
+
+body {
+  max-height: 100vh;
+  max-width: 100vw;
+  font-size: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER STYLING */
+
+header {
+  overflow: hidden;
+}
+
+#top-header {
+       
+  text-align: center;
+  height: 60px;
+}
+
+/* LOGO STYLING */
+
+#logo {
+  float: left;
+  padding: none;
+  margin: none;
+  height: 100%;
+  width: 30%;
+  
+}
+
+#logo div {
+  height: 100%;
+  width: 60%;
+  float: left;
+  padding: 10px 0px;
+  background-image: url("../img/generic_logo.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+} 
+
+#keymenu{
+  height: 100%;
+  width: 20%;
+  float: left;
+  vertical-align: center;
+}
+/* NAVIGATION STYLING */
+
+#menu {
+  float: right;
+  width: 50%;
+  height: 100%;
+  margin: none;
+}
+   
+#menu ul {
+  text-align: center;
+  float: right;
+  margin: none;
+  background: #000000;
+}
+   
+#menu li {
+  display: inline-block;
+  padding: none;
+  margin: none;
+}
+   
+#menu li a, #menu li span {
+  display: inline-block;
+  padding: 0em 1.5em;
+  text-decoration: underline;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 60px;
+  
+}
+   
+#menu li a {
+  color: #FFF;
+}
+   
+#menu li:hover a, #menu li span {
+  background: #FFF;
+  color: #000000;
+  border-left: 1px solid #006170;
+  text-decoration: none;
+}
+#menu li:active a {
+  border: #AAE9F2;
+}
+
+#menu .active{
+  background-color:  #006170;
+}
+
+ul.description {
+  list-style-type: circle;
+}
+/* HEADER IMAGE STYLING*/
+
+#header-image{ 
+  top: 10px; 
+  position: relative; 
+} 
+
+#header-image img{ 
+  width: 100%;
+  min-height: 30vh;
+  max-height: 30vh;
+  margin: none; 
+  padding: none; 
+} 
+
+#image-text{ 
+  position: absolute; 
+  top: 60%; 
+  left: 60%; 
+  font-family: 'Roboto'; 
+  color: #000; 
+  transform: translate(-30%, -30%); 
+  text-align: center; 
+} 
+/* TODO */
+
+
+/* FORM STYLING , TABLE TA FEIO DEMAAAAIS*/
+
+table, th, td {
+  border: 1px solid rgba(255, 0, 0, 0.116);
+  border-collapse: collapse;
+  height: 100%;
+  width: 100%;
+}
+
+th {
+  width: 50%;
+}
+
+fieldset span { 
+  float: left; 
+  width: 6em; 
+  text-align: right; 
+}
+
+label { 
+  display: block; 
+  margin: 0; 
+  padding: 0;
+}
+
+input, textarea { 
+  text-align: left; 
+}
+
+input.submit    { 
+  text-align: center; 
+}
+
+label, input.submit, legend, fieldset { 
+  font: normal 1em Verdana, Geneva, Arial, Helvetica, sans-serif; 
+}
+
+legend { 
+  padding: 1em; 
+}
+label  { 
+  margin: 0.5em; 
+}
+fieldset { 
+  padding: 1em; 
+}
+fieldset div  { 
+  margin: 0.5em; padding-left: 6.5em; 
+}
+fieldset span { 
+  padding-right: 0.5em; 
+}
+
+
+/* IMAGENS PRODUTOS... PROVAVELMENTE VAI SER ALTERADO */
+#imglink {
+  height: 20vh;
+  width: 25vw;
+  margin-left: 5vw;
+  background-color: lightgray;
+  align-items: center;
+}
+#imglink img{
+  height: 100%;
+  width: 100%;
+}
+
+.circle {
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  height: 150px; 
+  width: 150px;
+  overflow: hidden;
+  position: relative;
+}
+.coluna{
+  float: left;
+  padding: 15px;
+}
+.coluna.colunaskill {
+  flex: 12.5%;
+}
+
+#teemo{
+  background-image: url("../img/skillteemo.jpeg");
+}
+#teemo:hover{
+  background-image: url("../img/capeteemo.jpeg");
+}
+#coding{
+  background-image: url("../img/program.jpeg");
+}
+#coding:hover{
+  background-image: url("../img/hacker.jpg");
+}
+#food{
+  background-image: url("../img/comidajap.jpg");
+}
+#food:hover{
+  background-image: url("../img/comidacam.jpg");
+}
+#sleep{
+  background-image: url("../img/sono2.png");
+}
+#sleep:hover{
+  background-image: url("../img/sono.png");
+}
+#origami{
+  background-image: url("../img/dobradura1.jpeg");
+}
+#origami:hover{
+  background-image: url("../img/dobradura2.jpeg");
+}
+#late{
+  background-image: url("../img/atraso1.jpeg");
+}
+#late:hover{
+  background-image: url("../img/atraso2.jpeg");
+}
+#eletro{
+  background-image: url("../img/eletro1.jpeg");
+}
+#eletro:hover{
+  background-image: url("../img/eletro2.jpg");
+}
+#read{
+  background-image: url("../img/ler1.jpeg");
+}
+#read:hover{
+  background-image: url("../img/ler2.jpeg");
+}
+
+#sobrenos{
+  font-size: 2em;
+  text-align: center;
+}
+
+/**********************************/
+/*          Styling Footer        */
+/**********************************/
+  
+/*** Adding Styles to Company Details ***/
+.company-details{ 
+  overflow: hidden; 
+  padding: 3em 0em; 
+  background: #E3F0F7; 
+  text-align: center; 
+  margin-top: 5em; 
+} 
+
+#footer #col1, 
+#footer #col2, 
+#footer #col3{ 
+  float: left; 
+  width: 320px; 
+  padding: 0px 40px 0px 40px; 
+} 
+    
+#footer #icon{ 
+  display: block; 
+  margin-bottom: 1em; 
+  font-size: 3em; 
+} 
+
+/*** Adding Styles to Copyright Div ***/
+.copyright 
+{ 
+  overflow: hidden; 
+  padding: 3em 0em; 
+  border-top: 20px solid rgba(255, 255, 255, 0.08); 
+  text-align: center; 
+  background: #000000; 
+} 
+    
+.copyright p 
+{ 
+  letter-spacing: 1px; 
+  font-size: 0.90em; 
+  color: rgba(255, 255, 255, 0.6); 
+} 
+    
+.copyright a 
+{ 
+  text-decoration: none; 
+  color: rgba(255, 255, 255, 0.8); 
+} 
+
+/* Styling Social Icons */
+ul.contact{ 
+  margin: 0; 
+  padding: 2em 0em 0em 0em; 
+  list-style: none; 
+} 
+    
+ul.contact li{ 
+  display: inline-block; 
+  padding: 0em 0.10em; 
+  font-size: 1em; 
+} 
+
+ul.contact li a{ 
+  color: #FFF; 
+  display: inline-block; 
+  background: #006170; 
+  width: 40px; 
+  height: 40px; 
+  line-height: 40px; 
+  text-align: center; 
+}  

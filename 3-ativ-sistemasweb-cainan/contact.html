@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Atividade HTML Contato</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://use.fontawesome.com/55399e0e7e.js"></script>
+    <script type="text/javascript" src="assets/js/javascript.js"></script>
+</head>
+
+<body onload="changeBackground()">
+    <header>
+        <div id="top-header">
+            <!-- LOGO -->
+            <div id="logo">
+                <div></div>
+            </div>
+            <div id="keymenu">
+            </div>
+            <!-- MENU DE NAVEGAÇÃO -->
+            <nav>
+                <div id="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Sobre Nós</a></li>
+                        <li class="active"><a href="#">Contato</a></li>
+                        <li><a href="#" onmouseover="showHotKeys()" onmouseout="hideHotKeys()" id="hotkey">Hotkeys</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- IMAGEM DO HEADER -->
+        <div id="header-image">
+            <img src="./assets/img/header_image1.png">
+            <h2 id="image-text">
+                Apresentação de Produtos em Promoção
+            </h2>
+        </div>
+    </header>
+    <section>
+        <form method="" action="" id="forman" onsubmit="displayFormMessage()">
+            <fieldset>
+                <legend>Entre em contato conosco</legend>
+                <table>
+                    <tr>
+                        <th><label for="text">Seu nome</label></th>
+                        <th><input type="text" name="name" id="formname" value="" placeholder="Nome" autocomplete="on"
+                                autofocus onkeypress="pressFunction(this)"/></th>
+                    </tr>
+                    <tr>
+                        <th><label for="text">Email</label></th>
+                        <th><input type="email" name="email" id="formemail" value="" placeholder="Email"
+                                autocomplete="on" onkeypress="pressFunction(this)"/></th>
+                    </tr>
+                    <tr>
+                        <th><label for="product">Escolhe seu produto preferido:</label></th>
+                        <th><input list="procucts" name="browser" id="product" onkeypress="pressFunction(this)">
+
+                            <datalist id="products">
+                                <option value="Produto 1">
+                                <option value="Produto 2">
+                                <option value="Produto 3">
+                                <option value="Produto 4">
+                            </datalist></th>
+                    </tr>
+                    <tr>
+                        <th><label for="text">Mensagem</label></th>
+                        <th><textarea type="text" name="mensagem" id="comentario" value="" placeholder="Mensagem"
+                                rows="5" cols="23" onkeypress="pressFunction(this)"></textarea></th>
+                    </tr>
+                </table>
+                <div><input type="submit" class="submit" name="submit" value="Enviar" onclick="alertSent()"></div>
+            </fieldset>
+        </form>
+    </section>
+    <footer>
+        <!-- FORMULÁRIO DE CONTATO -->
+        <div class="copyright">
+            <p>Copyright</p>
+            <ul class="contact">
+                <li>
+                    <a href="https://www.twitter.com">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.facebook.com">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.reddit.com">
+                        <i class="fa fa-reddit" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
